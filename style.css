@@ -21,3 +21,15 @@ body {
 #input-group {
   margin-bottom: 3rem;
 }
+
+.sign-info {
+  display: flex;
+}
+
+img {
+  margin-right: 2rem;
+}
+
+#text-info {
+  text-align: left;
+}
