@@ -21,7 +21,8 @@ document.querySelector('#submit').addEventListener('click', async () => {
   const date = input.slice(5);
   console.log(date);
   if (date >= '03-21' && date <= '04-19') {
-    document.querySelector('#image').setAttribute('src', 'https://cdn.pixabay.com/photo/2015/02/17/08/25/horoscope-639126_1280.jpg');
+    document.querySelector('#image').setAttribute('src', './images/aries.jpg');
+    document.querySelector('#image').setAttribute('alt', 'You are Aries!!!');
     // document.querySelector('#result').innerText = 'You are Aries!!!';
     getInfo('Aries');
   } else if (date >= '04-20' && date <= '05-20') {
@@ -79,7 +80,7 @@ function getInfo(yourSign) {
   document.querySelector('#image').style.display = 'block';
   const info = data.find(item => item.name === yourSign);
   console.log(info);
-  badTraits.innerText = 'Bad traits: '
+  badTraits.innerText = 'Bad traits: \u00A0'
   info.bad_traits.forEach((item, index) => {
     if(index === info.bad_traits.length-1)
       badTraits.innerText += `${item}.`;
@@ -88,7 +89,7 @@ function getInfo(yourSign) {
     console.log(badTraits);
     document.querySelector('#text-info').appendChild(badTraits);
   })
-  compatibility.innerText = 'Compatibility: '
+  compatibility.innerText = 'Compatibility: \u00A0'
   info.compatibility.forEach((item, index) => {
     if(index === info.compatibility.length-1)
       compatibility.innerText += `${item}.`;
@@ -97,7 +98,7 @@ function getInfo(yourSign) {
     console.log(compatibility);
     document.querySelector('#text-info').appendChild(compatibility);
   })
-  favorites.innerText = 'Favorites: '
+  favorites.innerText = 'Favorites: \u00A0'
   info.favorites.forEach((item, index) => {
     if(index === info.favorites.length-1)
       favorites.innerText += `${item}.`;
