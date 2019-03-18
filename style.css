@@ -16,6 +16,8 @@ body {
   text-align: center;
   background: url('https://img2.cgtrader.com/items/671249/905a8ffe7a/star-field-space-background-3d-model.jpg') no-repeat;
   background-size: cover;
+  height: 100vh;
+  font-family: Roboto;
 }
 
 #input-group {
@@ -28,8 +30,23 @@ body {
 
 img {
   margin-right: 2rem;
+  display: none;
 }
 
 #text-info {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#submit {
+  background: white;
+  border: 2px solid #008CBA;
+  transition-duration: 0.4s;
+}
+
+#submit:hover {
+  background-color: #008CBA;
+  color: white;
 }
