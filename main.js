@@ -26,11 +26,11 @@ document.querySelector('#submit').addEventListener('click', async () => {
     // document.querySelector('#result').innerText = 'You are Aries!!!';
     getInfo('Aries');
   } else if (date >= '04-20' && date <= '05-20') {
-    document.querySelector('#image').setAttribute('src', 'https://cdn.pixabay.com/photo/2015/02/17/08/25/horoscope-639127_1280.jpg');
+    document.querySelector('#image').setAttribute('src', './images/taurus.jpg');
     // document.querySelector('#result').innerText = 'You are Taurus!!!';
     getInfo('Taurus');
   } else if (date >= '05-21' && date <= '06-20') {
-    document.querySelector('#image').setAttribute('src', 'https://cdn.pixabay.com/photo/2015/02/17/08/24/horoscope-639122_1280.jpg');
+    document.querySelector('#image').setAttribute('src', './images/gemini.jpg');
     // document.querySelector('#result').innerText = 'You are Gemini!!!';
     getInfo('Gemini');
   } else if (date >= '06-21' && date <= '07-22') {
@@ -38,11 +38,11 @@ document.querySelector('#submit').addEventListener('click', async () => {
     // document.querySelector('#result').innerText = 'You are Cancer!!!';
     getInfo('Cancer');
   } else if (date >= '07-23' && date <= '08-22') {
-    document.querySelector('#image').setAttribute('src', 'https://cdn.pixabay.com/photo/2015/02/17/08/24/horoscope-639123_1280.jpg');
+    document.querySelector('#image').setAttribute('src', './images/leo.jpg');
     // document.querySelector('#result').innerText = 'You are Leo!!!';
     getInfo('Leo');
   } else if (date >= '08-23' && date <= '09-22') {
-    document.querySelector('#image').setAttribute('src', 'https://cdn.pixabay.com/photo/2015/02/19/09/13/horoscope-641920_1280.jpg');
+    document.querySelector('#image').setAttribute('src', './images/virgo.jpg');
     // document.querySelector('#result').innerText = 'You are Virgo!!!';
     getInfo('Virgo');
   } else if (date >= '09-23' && date <= '10-22') {
@@ -66,7 +66,7 @@ document.querySelector('#submit').addEventListener('click', async () => {
     // document.querySelector('#result').innerText = 'You are Aquarius!!!';
     getInfo('Aquarius');
   } else if (date >= '02-19' && date <= '03-20') {
-    document.querySelector('#image').setAttribute('src', 'https://cdn.pixabay.com/photo/2015/02/17/08/25/horoscope-639126_1280.jpg');
+    document.querySelector('#image').setAttribute('src', './images/pisces.jpg');
     // document.querySelector('#result').innerText = 'You are Pisces!!!';
     getInfo('Pisces');
   }
